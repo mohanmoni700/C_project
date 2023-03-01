@@ -4,7 +4,11 @@ stages {
 stage('Build') {
   steps {
     sh '''
-    make ABC.exe
+    gcc -c main.c
+    gcc -c big2.c
+    gcc -c fact.c
+    gcc -c rev.c
+    gcc -o ABC.exe main.o big2.o fact.o rev.o
     '''
   }
 }
