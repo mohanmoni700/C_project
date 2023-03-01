@@ -4,8 +4,7 @@ stages {
 stage('Build') {
   steps {
     sh '''
-    sleep 5
-    echo "hello"
+    make ABC.exe
     '''
   }
 }
