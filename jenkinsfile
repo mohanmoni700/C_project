@@ -10,6 +10,13 @@ stage('Build') {
     gcc -c rev.c
     gcc -o ABC.exe main.o big2.o fact.o rev.o
     '''
+stage('deploy') {
+  steps {
+    sh '''
+    echo "deploy is done"
+    '''
+  }
+}    
   }
 }
 }
